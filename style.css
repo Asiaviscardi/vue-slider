@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+  }
+  
+  .sliders{
+    width: 60%;
+    height: 55%;
+  }
+  
+  #principale{
+    height: 100%;
+    width: 80%;
+  }
+  
+  #secondarie{
+    height: 100%;
+    width: 20%;
+  }
+  
+  .principale-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .secondarie-img{
+    height: 20%;
+    opacity: 50%;
+  }
+  
+  .active {
+    visibility: visible;
+  }
+  
+  .selected {
+    opacity: 100%;
+    border: 3px solid white;
+  }
+  
+  .info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    z-index: 1000;
+    color: white;
+    padding: 0px 16px;
+    text-align: end;
+  }
