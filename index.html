@@ -21,21 +21,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
+    <!--Vue-->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
     <title>Carousel</title>
 
 </head>
 
 <body class="d-flex justify-content-center align-items-center ">
 
-  <div class="sliders d-flex ">
+  <div id="app" class="sliders d-flex ">
 
     <div id="principale" class="position-relative ">
+        <img v-bind:src="immagine" alt="">
 
       <div class="info">
 
-        <h2 id="title"></h2>
+        <h2 id="title">{{titolo}}</h2>
 
-        <span id="text"></span>
+        <span id="text">{{testo}}</span>
 
       </div>
 
